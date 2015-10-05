@@ -4,4 +4,9 @@
   <default revision="refs/heads/master" remote="github" sync-j="4"/>
 
   <project name="I2C.git" remote="github" path="driver/hal/i2c"/>
+  <project name="DAC.git" remote="github" path="driver/hal/dac"/>
+  <project name="PWR.git" remote="github" path="driver/hal/pwr"/>
+
+  <project name="BSP_NUCLEO_32" remote="github" path="driver/bsp/nucelo_32"/>
+
 </manifest>
