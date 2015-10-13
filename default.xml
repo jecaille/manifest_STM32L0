@@ -1,12 +1,12 @@
 <manifest>
+
   <remote name="github" fetch="https://github.com/jecaille"/>
 
   <default revision="refs/heads/master" remote="github" sync-j="4"/>
 
-  <project name="I2C.git" remote="github" path="driver/hal/i2c"/>
-  <project name="DAC.git" remote="github" path="driver/hal/dac"/>
-  <project name="PWR.git" remote="github" path="driver/hal/pwr"/>
-
-  <project name="BSP_NUCLEO_32" remote="github" path="driver/bsp/nucelo_32"/>
+  <project name="package_hal_L0.git" remote="github" path=""/>
+  <project name="I2C.git" remote="github" path="Firmware/[INTERNAL]_HAL_IPs/i2c"/>
+  <project name="DAC.git" remote="github" path="Firmware/[INTERNAL]_HAL_IPs/dac"/>
+  <project name="PWR.git" remote="github" path="Firmware/[INTERNAL]_HAL_IPs/pwr"/>
 
 </manifest>
