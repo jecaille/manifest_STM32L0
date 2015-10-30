@@ -1,0 +1,19 @@
+<manifest>
+
+  <remote name="github" fetch="https://github.com/jecaille"/>
+  <remote name="me" fetch="https://github.com/pilpilecorr"/>
+
+  <default revision="refs/heads/master" remote="github" sync-j="4"/>
+
+  <project name="package_hal_L0.git" remote="github" path="Firmware/"/>
+  <project name="I2C.git" remote="github" path="Firmware/[INTERNAL]_HAL_IPs/i2c" groups="ip"/>
+  <project name="DAC.git" remote="me" path="Firmware/[INTERNAL]_HAL_IPs/dac" revision="br_f1" groups="ip">
+    <copyfile src="Inc/stm32_hal_dac.h"    dest="Firmware/stm32_hal_dac.h"/>
+    <copyfile src="Inc/stm32_hal_dac_ex.h" dest="Firmware/stm32_hal_dac_ex.h"/>
+    <copyfile src="Src/stm32_hal_dac.c"    dest="Firmware/stm32_hal_dac.c"/>
+    <copyfile src="Src/stm32_hal_dac_ex.c" dest="Firmware/stm32_hal_dac_ex.c"/>
+  </project>
+  <project name="PWR.git" remote="github" path="Firmware/[INTERNAL]_HAL_IPs/pwr"/>
+
+
+</manifest>
